@@ -26,7 +26,7 @@ import messages from '../messages';
 import { selectPostEditorVisible } from '../posts/data/selectors';
 import { isCourseStatusValid } from '../utils';
 import useFeedbackWrapper from './FeedbackWrapper';
-
+import CustomFooter from '../../components/CustomFooter';
 const FooterSlot = lazy(() => import('@edx/frontend-component-footer').then(module => ({ default: module.FooterSlot })));
 const PostActionsBar = lazy(() => import('../posts/post-actions-bar/PostActionsBar'));
 const CourseTabsNavigation = lazy(() => import('../../components/NavigationBar/CourseTabsNavigation'));
@@ -175,7 +175,7 @@ const DiscussionsHome = () => {
           )}
           {!enableInContextSidebar && isEnrolled && (<DiscussionsProductTour />)}
         </main>
-        {!enableInContextSidebar && <FooterSlot />}
+        {!enableInContextSidebar && <CustomFooter />}
       </DiscussionContext.Provider>
     </Suspense>
   );
