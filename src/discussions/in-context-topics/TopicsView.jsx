@@ -62,7 +62,7 @@ const TopicsList = () => {
       )}
       {loadingStatus === RequestStatus.IN_PROGRESS && (
         <div className="d-flex justify-content-center p-4">
-          <Spinner animation="border" variant="primary" size="lg" />
+          <Spinner animation="border" variant="danger" size="lg" />
         </div>
       )}
     </>

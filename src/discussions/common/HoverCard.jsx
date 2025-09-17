@@ -88,6 +88,8 @@ const HoverCard = ({
           size="sm"
           alt="Like"
           disabled={!userHasLikePermission}
+          variant='outline'
+          className='custom-icon-filled'
           iconClassNames="like-icon-dimensions"
           onClick={(e) => {
             e.preventDefault();
@@ -102,6 +104,8 @@ const HoverCard = ({
             iconAs={Icon}
             size="sm"
             alt="Follow"
+            variant='outline'
+            className='custom-icon-filled'
             iconClassNames="follow-icon-dimensions"
             onClick={(e) => {
               e.preventDefault();

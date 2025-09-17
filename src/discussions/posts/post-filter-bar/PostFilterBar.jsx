@@ -145,7 +145,7 @@ const PostFilterBar = () => {
         <div className="border-bottom my-2" />
         {status === RequestStatus.IN_PROGRESS ? (
           <div className="d-flex justify-content-center p-4">
-            <Spinner animation="border" variant="primary" size="lg" />
+            <Spinner animation="border" variant="danger" size="lg" />
           </div>
         ) : (
           <div className="d-flex flex-row pt-2">
@@ -184,7 +184,7 @@ const PostFilterBar = () => {
       className="filter-bar collapsible-card-lg border-0"
     >
       <Collapsible.Trigger className="collapsible-trigger border-0">
-        <span className="text-primary-500 pr-4 font-style">
+        <span className="text-primary-red pr-4 font-style">
           {intl.formatMessage(messages.sortFilterStatus, {
             own: false,
             type: currentFilters.postType,

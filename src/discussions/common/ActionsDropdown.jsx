@@ -68,6 +68,8 @@ const ActionsDropdown = ({
         iconAs={Icon}
         disabled={disabled}
         size={iconSize}
+        variant='outline'
+        className='custom-icon-filled'
         ref={buttonRef}
         iconClassNames={dropDownIconSize ? 'dropdown-icon-dimensions' : ''}
       />

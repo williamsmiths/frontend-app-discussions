@@ -81,7 +81,7 @@ const CommentsView = ({ threadType }) => {
       )}
       {isLoading && (
       <div className="mb-2 mt-3 d-flex justify-content-center">
-        <Spinner animation="border" variant="primary" className="spinner-dimensions" />
+        <Spinner animation="border" variant="danger" className="spinner-dimensions" />
       </div>
       )}
       {(isUserPrivilegedInPostingRestriction && (!!unEndorsedCommentsIds.length || !!endorsedCommentsIds.length)
@@ -92,7 +92,7 @@ const CommentsView = ({ threadType }) => {
              variant="plain"
              block="true"
              className="card mb-4 px-0 border-0 py-10px mt-2 font-style font-weight-500
-                    line-height-24 text-primary-500"
+                    line-height-24 text-primary-red"
              onClick={handleAddResponse}
              data-testid="add-response"
            >

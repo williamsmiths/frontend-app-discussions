@@ -27,7 +27,7 @@ const Topic = ({
   return (
     <>
       <Link
-        className={classNames('discussion-topic p-0 text-decoration-none text-primary-500', {
+        className={classNames('discussion-topic p-0 text-decoration-none text-primary-red', {
           'border-light-400 border-bottom': showDivider,
         })}
         data-topic-id={topic.id}

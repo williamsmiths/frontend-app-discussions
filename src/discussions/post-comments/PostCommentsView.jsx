@@ -77,7 +77,7 @@ const PostCommentsView = () => {
         top: '50%',
       }}
       >
-        <Spinner animation="border" variant="primary" data-testid="loading-indicator" />
+        <Spinner animation="border" variant="danger" data-testid="loading-indicator" />
       </div>
     );
   }
@@ -90,7 +90,7 @@ const PostCommentsView = () => {
             <div className="px-4 py-1.5 bg-white">
               <Button
                 variant="plain"
-                className="px-0 line-height-24 py-0 my-1.5 border-0 font-weight-normal font-style text-primary-500"
+                className="px-0 line-height-24 py-0 my-1.5 border-0 font-weight-normal font-style text-primary-red"
                 iconBefore={ArrowBack}
                 onClick={() => navigate({ ...redirectUrl })}
                 size="sm"
@@ -123,7 +123,7 @@ const PostCommentsView = () => {
           />
         )}
       </div>
-      <Suspense fallback={(<Spinner />)}>
+      <Suspense fallback={(<Spinner variant="danger"/>)}>
         {!!commentsCount && <CommentsSort />}
         <CommentsView threadType={type} />
       </Suspense>

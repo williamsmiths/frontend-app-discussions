@@ -40,7 +40,7 @@ const AuthorLabel = ({
     <span
       className={classNames('mr-1.5 font-style font-weight-500 author-name', {
         'text-gray-700': isRetiredUser,
-        'text-primary-500': !authorLabelMessage && !isRetiredUser,
+        'text-primary-red': !authorLabelMessage && !isRetiredUser,
       })}
       role="heading"
       aria-level="2"
@@ -72,7 +72,7 @@ const AuthorLabel = ({
           {authorLabelMessage && (
             <span
               className={classNames('mr-1.5 font-style font-weight-500', {
-                'text-primary-500': showTextPrimary,
+                'text-primary-red': showTextPrimary,
                 'text-gray-700': isRetiredUser,
               })}
               style={{ marginLeft: '2px' }}

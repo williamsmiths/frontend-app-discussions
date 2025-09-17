@@ -2,6 +2,7 @@
 @import "~@edx/brand/paragon/variables.scss";
 @import "~@openedx/paragon/scss/core/core.scss";
 @import "~@edx/brand/paragon/overrides.scss";
+@import "./custom.scss";
 
 @import "~@edx/frontend-component-footer/dist/footer";
 @import "~@edx/frontend-component-header/dist/index";
@@ -257,7 +258,7 @@ header {
 }
 
 .border-primary-500-2 {
-  border: 2px solid $primary-500 !important;
+  border: 2px solid $primary-red !important;
   border-width: 2px !important;
 }
 
@@ -345,7 +346,7 @@ header {
     .nav-item:not(:last-child){
       .nav-link {
           border-right: 0;
-
+          
           @media screen and (max-width: 567px) {
             border-right: solid 1px #e9e6e4;
           }
@@ -384,7 +385,7 @@ header {
 
 .btn-icon.btn-icon-primary:hover {
   background-color: $light-300 !important;
-  color: $primary-500 !important
+  color: $primary-red !important
 }
 
 
@@ -445,7 +446,7 @@ header {
 
   .nav-link.active,
   .show>.nav-link {
-    background-color: $primary-500 !important;
+    background-color: $primary-red !important;
   }
 }
 

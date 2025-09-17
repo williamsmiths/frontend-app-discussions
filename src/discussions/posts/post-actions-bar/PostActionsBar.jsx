@@ -53,10 +53,11 @@ const PostActionsBar = () => {
         <>
           {!enableInContextSidebar && <div className="border-right border-light-400 mx-3" />}
           <Button
-            variant={enableInContextSidebar ? 'plain' : 'brand'}
+            variant={enableInContextSidebar ? 'outline' : 'outline'}
             className={classNames(
               'my-0 font-style border-0 line-height-24',
-              { 'px-3 py-10px border-0': enableInContextSidebar },
+              { 'px-3 py-10px border-0 custom-icon-filled': enableInContextSidebar },
+              { 'custom-confirm-btn': !enableInContextSidebar },
             )}
             onClick={handleAddPost}
             size={enableInContextSidebar ? 'md' : 'sm'}

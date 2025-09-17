@@ -22,11 +22,13 @@ const BackButton = ({
           iconAs={Icon}
           style={{ padding: '18px' }}
           size="inline"
+          variant='outline'
+          className='custom-icon-filled'
           onClick={() => navigate(path)}
           alt={intl.formatMessage(messages.backAlt)}
         />
         <div className="d-flex flex-fill justify-content-center align-items-center mr-4.5">
-          {loading ? <Spinner animation="border" variant="primary" size="sm" /> : title}
+          {loading ? <Spinner animation="border" variant="danger" size="sm" /> : title}
         </div>
       </div>
       <div className="border-bottom border-light-400" />

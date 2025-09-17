@@ -3,52 +3,52 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   title: {
     id: 'discussions.app.title',
-    defaultMessage: 'Discussions',
+    defaultMessage: 'Thảo luận',
   },
   searchAllPosts: {
     id: 'discussions.posts.actionBar.searchAllPosts',
-    defaultMessage: 'Search all posts',
+    defaultMessage: 'Tìm kiếm tất cả bài viết',
     description: 'Placeholder text in search box',
   },
   search: {
     id: 'discussions.posts.actionBar.search',
     defaultMessage: `{page, select,
-      topics {Search topics}
-      posts {Search all posts}
-      learners {Search learners}
-      myPosts {Search all posts}
+      topics {Tìm kiếm chủ đề}
+      posts {Tìm kiếm tất cả bài viết}
+      learners {Tìm kiếm người học}
+      myPosts {Tìm kiếm tất cả bài viết}
       other {{page}}
     }`,
     description: 'Placeholder text in search box',
   },
   searchInfo: {
     id: 'discussions.actionBar.searchInfo',
-    defaultMessage: 'Showing {count} results for "{text}"',
+    defaultMessage: 'Đang hiển thị {count} kết quả cho "{text}"',
     description: 'Message displayed when user performs a search',
   },
   searchRewriteInfo: {
     id: 'discussions.actionBar.searchRewriteInfo',
-    defaultMessage: 'No results found for "{searchString}". Showing {count} results for "{textSearchRewrite}".',
+    defaultMessage: 'Không tìm thấy kết quả cho "{searchString}". Hiển thị {count} kết quả cho "{textSearchRewrite}".',
     description: 'Message displayed when user performs a search and search query is rewritten because matching results are not found',
   },
   searchInfoSearching: {
     id: 'discussions.actionBar.searchInfoSearching',
-    defaultMessage: 'Searching...',
+    defaultMessage: 'Đang tìm kiếm...',
     description: 'Message displayed when user performs a search',
   },
   clearSearch: {
     id: 'discussions.actionBar.clearSearch',
-    defaultMessage: 'Clear results',
+    defaultMessage: 'Xóa kết quả',
     description: 'Button to clear search',
   },
   addAPost: {
     id: 'discussion.posts.actionBar.add',
-    defaultMessage: 'Add a post',
+    defaultMessage: 'Thêm bài viết',
     description: 'Button to add a new discussion post',
   },
   close: {
     id: 'discussion.posts.actionBar.close',
-    defaultMessage: 'Close',
+    defaultMessage: 'Đóng',
     description: 'Alt description for close icon button for closing in-context sidebar.',
   },
 });

@@ -86,7 +86,7 @@ const LearnerPostsView = () => {
           onClick={() => navigate({ ...discussionsPath(Routes.LEARNERS.PATH, { courseId })(location) })}
           alt={intl.formatMessage(messages.back)}
         />
-        <div className="text-primary-500 font-style font-weight-bold py-2.5">
+        <div className="text-primary-red font-style font-weight-bold py-2.5">
           {intl.formatMessage(messages.activityForLearner, { username: capitalize(username) })}
         </div>
         <div style={{ padding: '18px' }} />
@@ -99,7 +99,7 @@ const LearnerPostsView = () => {
         {loadingStatus !== RequestStatus.IN_PROGRESS && sortedPostsIds?.length === 0 && <NoResults />}
         {loadingStatus === RequestStatus.IN_PROGRESS ? (
           <div className="d-flex justify-content-center p-4">
-            <Spinner animation="border" variant="primary" size="lg" />
+            <Spinner animation="border" variant="danger" size="lg" />
           </div>
         ) : (
           nextPage && loadingStatus === RequestStatus.SUCCESSFUL && (

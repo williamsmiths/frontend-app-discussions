@@ -86,11 +86,11 @@ const PostsList = ({
       {sortedPostsIds?.length === 0 && loadingStatus === RequestStatus.SUCCESSFUL && <NoResults />}
       {loadingStatus === RequestStatus.IN_PROGRESS || parentIsLoading ? (
         <div className="d-flex justify-content-center p-4 mx-auto my-auto">
-          <Spinner animation="border" variant="primary" size="lg" />
+          <Spinner animation="border" variant="danger" size="lg" />
         </div>
       ) : (
         nextPage && loadingStatus === RequestStatus.SUCCESSFUL && (
-          <Button onClick={() => loadThreads(topicsIds, nextPage)} variant="primary" size="md">
+          <Button onClick={() => loadThreads(topicsIds, nextPage)} variant="outline" className='custom-confirm-btn' size="md">
             {intl.formatMessage(messages.loadMorePosts)}
           </Button>
         )

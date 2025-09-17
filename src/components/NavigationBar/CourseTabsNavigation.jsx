@@ -18,7 +18,7 @@ const CourseTabsNavigation = () => {
     <div id="courseTabsNavigation" className="course-tabs-navigation px-4 bg-white">
       {!!tabs.length && (
         <Tabs
-          className="nav-underline-tabs"
+          className="nav-underline-tabs custom-tabs"
           aria-label={intl.formatMessage(messages.courseMaterial)}
         >
           {tabs.map(({ url, title, slug }) => (

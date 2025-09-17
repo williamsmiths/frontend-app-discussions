@@ -33,7 +33,7 @@ const SectionBaseGroup = ({
   const renderSection = useMemo(() => (
     section?.map((subsection, index) => (
       <Link
-        className={classNames('subsection p-0 text-decoration-none text-primary-500', {
+        className={classNames('subsection p-0 text-decoration-none text-primary-red', {
           'border-bottom border-light-400': (section.length - 1 !== index),
         })}
         key={subsection.id}
@@ -61,7 +61,7 @@ const SectionBaseGroup = ({
 
   return (
     <div
-      className="discussion-topic-group d-flex flex-column text-primary-500"
+      className="discussion-topic-group d-flex flex-column text-primary-red"
       data-section-id={sectionId}
       data-testid="section-group"
     >

@@ -31,7 +31,7 @@ const ContentUnavailable = ({ subTitleMessage }) => {
       })}
       >
         <ContentUnavailableIcon />
-        <h3 className="pt-3 font-weight-bold text-primary-500 text-center">
+        <h3 className="pt-3 font-weight-bold text-primary-red text-center">
           {intl.formatMessage(messages.contentUnavailableTitle)}
         </h3>
         <p className="pb-2 text-gray-500 text-center">{intl.formatMessage(subTitleMessage)}</p>

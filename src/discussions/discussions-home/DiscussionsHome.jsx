@@ -79,7 +79,7 @@ const DiscussionsHome = () => {
   }));
 
   return (
-    <Suspense fallback={(<Spinner />)}>
+    <Suspense fallback={(<Spinner variant="danger" />)}>
       <DiscussionContext.Provider value={discussionContextValue}>
         {!enableInContextSidebar && (<Header courseOrg={org} courseNumber={courseNumber} courseTitle={courseTitle} />)}
         <main className="container-fluid d-flex flex-column p-0 w-100 font-size" id="main" tabIndex="-1">
@@ -102,7 +102,7 @@ const DiscussionsHome = () => {
             </div>
           )}
           {provider === DiscussionProvider.LEGACY && (
-            <Suspense fallback={(<Spinner />)}>
+            <Suspense fallback={(<Spinner variant="danger" />)}>
               <Routes>
                 {[
                   ROUTES.TOPICS.CATEGORY,
@@ -123,7 +123,7 @@ const DiscussionsHome = () => {
           )}
           {isCourseStatusValid(courseStatus) && (
             !isEnrolled && isUserLearner ? (
-              <Suspense fallback={(<Spinner />)}>
+              <Suspense fallback={(<Spinner variant="danger" />)}>
                 <Routes>
                   {ALL_ROUTES.map((route) => (
                     <Route
@@ -136,11 +136,11 @@ const DiscussionsHome = () => {
               </Suspense>
             ) : (
               <div className="d-flex flex-row position-relative">
-                <Suspense fallback={(<Spinner />)}>
+                <Suspense fallback={(<Spinner variant="danger" />)}>
                   <DiscussionSidebar displaySidebar={displaySidebar} postActionBarRef={postActionBarRef} />
                 </Suspense>
                 {displayContentArea && (
-                  <Suspense fallback={(<Spinner />)}>
+                  <Suspense fallback={(<Spinner variant="danger" />)}>
                     <DiscussionContent />
                   </Suspense>
                 )}

@@ -30,7 +30,7 @@ const NoResults = () => {
   }
 
   const titleCssClasses = classNames(
-    { 'font-weight-normal text-primary-500': topicsFilter || learnersFilter },
+    { 'font-weight-normal text-primary-red': topicsFilter || learnersFilter },
   );
   const textCssClasses = classNames(
     { 'font-weight-normal text-gray-700': topicsFilter || learnersFilter },

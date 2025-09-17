@@ -21,7 +21,7 @@ const LikeButton = ({ count, onClick, voted }) => {
   }, [onClick]);
 
   return (
-    <div className="d-flex align-items-center mr-36px text-primary-500">
+    <div className="d-flex align-items-center mr-36px text-primary-red">
       <OverlayTrigger
         overlay={(
           <Tooltip id={`liked-${count}-tooltip`}>

@@ -89,7 +89,7 @@ const PostLink = ({
             <div className="d-flex align-items-center pb-0 mb-0 flex-fill">
               <div className="text-truncate mr-1">
                 <span className={classNames(
-                  'font-weight-500 text-primary-500 font-style align-bottom mr-1',
+                  'font-weight-500 text-primary-red font-style align-bottom mr-1',
                   { 'font-weight-bolder': !read },
                 )}
                 >

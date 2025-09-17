@@ -219,7 +219,7 @@ const Comment = ({
             />
           ) : (
             <HTMLLoader
-              cssClassName="comment-body html-loader text-break mt-14px font-style text-primary-500"
+              cssClassName="comment-body html-loader text-break mt-14px font-style text-primary-red"
               componentId="comment"
               htmlNode={renderedBody}
               testId={id}
@@ -267,7 +267,7 @@ const Comment = ({
             ) : (
               !isClosed && isUserPrivilegedInPostingRestriction && (inlineReplies.length >= 5) && (
                 <Button
-                  className="d-flex flex-grow mt-2 font-style font-weight-500 text-primary-500 add-comment-btn rounded-0"
+                  className="d-flex flex-grow mt-2 font-style font-weight-500 text-primary-red add-comment-btn rounded-0"
                   variant="plain"
                   style={{ height: '36px' }}
                   onClick={handleAddCommentReply}

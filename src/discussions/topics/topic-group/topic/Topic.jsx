@@ -37,7 +37,7 @@ const Topic = ({ topicId, showDivider, index }) => {
   return (
     <Link
       className={
-        classNames('discussion-topic p-0 text-decoration-none text-primary-500', {
+        classNames('discussion-topic p-0 text-decoration-none text-primary-red', {
           'border-bottom border-light-400': showDivider,
         })
       }

@@ -186,7 +186,7 @@ const PostEditor = ({
     if (submitting) {
       return (
         <div className="m-4 card p-4 align-items-center">
-          <Spinner animation="border" variant="primary" />
+          <Spinner animation="border" variant="danger" />
         </div>
       );
     }
@@ -449,7 +449,7 @@ const PostEditor = ({
         </div>
         <div className="d-flex justify-content-end">
           <Button
-            variant="outline-primary"
+            variant="tertiary"
             onClick={() => hideEditor(resetForm)}
           >
             {intl.formatMessage(messages.cancel)}
@@ -460,8 +460,8 @@ const PostEditor = ({
               pending: intl.formatMessage(messages.submitting),
             }}
             state={submitting ? 'pending' : 'default'}
-            className="ml-2"
-            variant="primary"
+            className="ml-2 custom-confirm-btn"
+            variant="outline"
             onClick={handleSubmit}
           />
         </div>
