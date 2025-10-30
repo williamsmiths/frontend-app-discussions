@@ -3,116 +3,116 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   allPosts: {
     id: 'discussions.posts.filter.showALl',
-    defaultMessage: 'Hiển thị tất cả',
+    defaultMessage: 'Show all',
     description: 'Option in dropdown to filter to all posts',
   },
   filterDiscussions: {
     id: 'discussions.posts.filter.discussions',
-    defaultMessage: 'Thảo luận',
+    defaultMessage: 'Discussions',
     description: 'Option in dropdown to filter to all discussions',
   },
   filterQuestions: {
     id: 'discussions.posts.filter.questions',
-    defaultMessage: 'Câu hỏi',
+    defaultMessage: 'Questions',
     description: 'Option in dropdown to filter to all questions',
   },
   filterBy: {
     id: 'discussions.posts.filter.message',
-    defaultMessage: 'Trạng thái: {filterBy}',
+    defaultMessage: 'Status: {filterBy}',
     description: 'Display text used to indicate what post status is being filtered',
   },
   filterAnyStatus: {
     id: 'discussions.posts.status.filter.anyStatus',
-    defaultMessage: 'Bất kỳ trạng thái nào',
+    defaultMessage: 'Any status',
     description: 'Option in dropdown to filter to all post statuses',
   },
   filterUnread: {
     id: 'discussions.posts.status.filter.unread',
-    defaultMessage: 'Chưa đọc',
+    defaultMessage: 'Unread',
     description: 'Option in dropdown to filter to unread posts',
   },
   filterFollowing: {
     id: 'discussions.posts.status.filter.following',
-    defaultMessage: 'Đang theo dõi',
+    defaultMessage: 'Following',
     description: 'Option in dropdown to filter to followed posts',
   },
   filterReported: {
     id: 'discussions.posts.status.filter.reported',
-    defaultMessage: 'Đã báo cáo',
+    defaultMessage: 'Reported',
     description: 'Option in dropdown to filter to reported posts',
   },
   filterUnanswered: {
     id: 'discussions.posts.status.filter.unanswered',
-    defaultMessage: 'Chưa trả lời',
+    defaultMessage: 'Unanswered',
     description: 'Option in dropdown to filter to unanswered posts',
   },
   filterUnresponded: {
     id: 'discussions.posts.status.filter.unresponded',
-    defaultMessage: 'Chưa có phản hồi',
+    defaultMessage: 'Not responded',
     description: 'Option in dropdown to filter to unresponded posts',
   },
   myPosts: {
     id: 'discussions.posts.filter.myPosts',
-    defaultMessage: 'Bài viết của tôi',
+    defaultMessage: 'My posts',
     description: 'Option in dropdown to filter to all a user\'s posts',
   },
   myDiscussions: {
     id: 'discussions.posts.filter.myDiscussions',
-    defaultMessage: 'Thảo luận của tôi',
+    defaultMessage: 'My discussions',
     description: 'Option in dropdown to filter to all a user\'s discussions',
   },
   myQuestions: {
     id: 'discussions.posts.filter.myQuestions',
-    defaultMessage: 'Câu hỏi của tôi',
+    defaultMessage: 'My questions',
     description: 'Option in dropdown to filter to all a user\'s questions',
   },
   sortedBy: {
     id: 'discussions.posts.sort.message',
-    defaultMessage: 'Sắp xếp theo {sortBy}',
+    defaultMessage: 'Sorted by {sortBy}',
     description: 'Display text used to indicate how posts are sorted',
   },
   lastActivityAt: {
     id: 'discussions.posts.sort.lastActivity',
-    defaultMessage: 'Hoạt động gần đây',
+    defaultMessage: 'Recent activity',
     description: 'Option in dropdown to sort posts by recent activity',
   },
   commentCount: {
     id: 'discussions.posts.sort.commentCount',
-    defaultMessage: 'Hoạt động nhiều nhất',
+    defaultMessage: 'Most activity',
     description: 'Option in dropdown to sort posts by most activity',
   },
   voteCount: {
     id: 'discussions.posts.sort.voteCount',
-    defaultMessage: 'Được thích nhiều nhất',
+    defaultMessage: 'Most likes',
     description: 'Option in dropdown to sort posts by most votes',
   },
   sortFilterStatus: {
     id: 'discussions.posts.sort-filter.sortFilterStatus',
     defaultMessage: `{own, select,
-      false {Tất cả}
-      true {Của tôi}
+      false {All}
+      true {Own}
       other {{own}}
     } {status, select,
       statusAll {}
-      statusUnread {chưa đọc}
-      statusFollowing {đang theo dõi}
-      statusReported {đã báo cáo}
-      statusUnanswered {chưa trả lời}
-      statusUnresponded {chưa có phản hồi}
+      statusUnread {unread}
+      statusFollowing {followed}
+      statusReported {reported}
+      statusUnanswered {unanswered}
+      statusUnresponded {unresponded}
       other {{status}}
     } {type, select,
-      discussion {thảo luận}
-      question {câu hỏi}
-      all {bài viết}
+      discussion {discussions}
+      question {questions}
+      all {posts}
       other {{type}}
     } {cohortType, select,
         all {}
-        group {trong {cohort}}
+        group {in {cohort}}
         other {{cohortType}}
-    } sắp xếp theo {sort, select,
-      lastActivityAt {hoạt động gần đây}
-      commentCount {hoạt động nhiều nhất}
-      voteCount {được thích nhiều nhất}
+    } sorted by {sort, select,
+      lastActivityAt {recent activity}
+      commentCount {most activity}
+      voteCount {most likes}
       other {{sort}}
     }`,
     description: 'Status message showing current sorting and filtering status',

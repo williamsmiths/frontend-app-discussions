@@ -3,54 +3,54 @@ import { defineMessages } from '@edx/frontend-platform/i18n';
 const messages = defineMessages({
   addComment: {
     id: 'discussions.comments.comment.addComment',
-    defaultMessage: 'Thêm bình luận',
+    defaultMessage: 'Add comment',
     description: 'Button to add a comment to a response',
   },
   addResponse: {
     id: 'discussions.comments.comment.addResponse',
-    defaultMessage: 'Thêm phản hồi',
+    defaultMessage: 'Add a response',
     description: 'Button to add a response to a response',
   },
   abuseFlaggedMessage: {
     id: 'discussions.comments.comment.abuseFlaggedMessage',
-    defaultMessage: 'Nội dung đã được báo cáo để nhân viên xem xét',
+    defaultMessage: 'Content reported for staff to review',
     description: 'Alert banner over comment that has been reported for abuse',
   },
   backAlt: {
     id: 'discussions.actions.back.alt',
-    defaultMessage: 'Quay lại danh sách',
+    defaultMessage: 'Back to list',
     description: 'Back to Posts list button text',
   },
   responseCount: {
     id: 'discussions.comments.comment.responseCount',
     defaultMessage: `{num, plural,
-      =0 {Không có phản hồi nào}
-      one {Hiển thị # phản hồi}
-      other {Hiển thị # phản hồi}
+      =0 {No responses}
+      one {Showing # response}
+      other {Showing # responses}
     }`,
   },
   endorsedResponseCount: {
     id: 'discussions.comments.comment.endorsedResponseCount',
     defaultMessage: `{num, plural,
-      =0 {Không có phản hồi được xác nhận}
-      one {Hiển thị # phản hồi được xác nhận}
-      other {Hiển thị # phản hồi được xác nhận}
+      =0 {No endorsed responses}
+      one {Showing # endorsed response}
+      other {Showing # endorsed responses}
     }`,
   },
   loadMoreComments: {
     id: 'discussions.comments.comment.loadMoreComments',
-    defaultMessage: 'Tải thêm bình luận',
+    defaultMessage: 'Load more comments',
     description: 'Button to load more comments on responses',
   },
   loadMoreResponses: {
     id: 'discussions.comments.comment.loadMoreResponses',
-    defaultMessage: 'Tải thêm phản hồi',
+    defaultMessage: 'Load more responses',
     description: 'Button to load more responses of forum posts',
   },
   postVisibility: {
     id: 'discussions.comments.comment.visibility',
-    defaultMessage: `Bài viết này hiển thị cho {group, select,
-         null {Mọi người}
+    defaultMessage: `This post is visible to {group, select,
+         null {Everyone}
          other {{group}}
     }.`,
     description: 'Message on comment mentioning the group a particular post is visible to',
@@ -58,168 +58,168 @@ const messages = defineMessages({
   postTime: {
     id: 'discussions.comments.comment.postedTime',
     defaultMessage: `{postType, select,
-      discussion {Thảo luận}
-      question {Câu hỏi}
+      discussion {Discussion}
+      question {Question}
       other {{postType}}
-    } đã đăng {relativeTime} bởi`,
+    } posted {relativeTime} by`,
     description: 'Timestamp for when a user posted the message followed by username. The relative time is already translated.',
   },
   commentTime: {
     id: 'discussions.comments.comment.commentTime',
-    defaultMessage: 'Đã đăng {relativeTime}',
-    description: 'Message about how long ago a comment was posted.',
+    defaultMessage: 'Posted {relativeTime}',
+    description: 'Message about how long ago a comment was posted. Appears as "username posted 7 minutes ago"',
   },
   answer: {
     id: 'discussions.comments.comment.answer',
-    defaultMessage: 'Câu trả lời',
+    defaultMessage: 'Answer',
     description: 'Message above a comment that has been marked as the answer.',
   },
   answeredLabel: {
     id: 'discussions.comments.comment.answeredlabel',
-    defaultMessage: 'Được đánh dấu là đã trả lời bởi',
-    description: 'Message above a comment marked as answered.',
+    defaultMessage: 'Marked as answered by',
+    description: 'Message above a comment that has been marked as answered. Appears as "Marked as answered by Username"',
   },
   endorsed: {
     id: 'discussions.comments.comment.endorsed',
-    defaultMessage: 'Được xác nhận',
+    defaultMessage: 'Endorsed',
     description: 'Message above a comment that has been endorsed.',
   },
   endorsedLabel: {
     id: 'discussions.comments.comment.endorsedlabel',
-    defaultMessage: 'Được xác nhận bởi',
-    description: 'Message above a comment that has been endorsed.',
+    defaultMessage: 'Endorsed by',
+    description: 'Message above a comment that has been endorsed. Appears as "Endorsed by Username"',
   },
   actionsAlt: {
     id: 'discussions.actions.label',
-    defaultMessage: 'Menu hành động',
+    defaultMessage: 'Actions menu',
     description: 'Button to see actions for a post or comment',
   },
   editAction: {
     id: 'discussions.actions.edit',
-    defaultMessage: 'Chỉnh sửa',
+    defaultMessage: 'Edit',
     description: 'Action to edit a comment or post',
   },
   pinAction: {
     id: 'discussions.actions.pin',
-    defaultMessage: 'Ghim',
+    defaultMessage: 'Pin',
     description: 'Action to pin a post',
   },
   deleteAction: {
     id: 'discussions.actions.delete',
-    defaultMessage: 'Xóa',
+    defaultMessage: 'Delete',
     description: 'Action to delete a post or comment',
   },
   submit: {
     id: 'discussions.editor.submit',
-    defaultMessage: 'Gửi',
+    defaultMessage: 'Submit',
     description: 'Button to submit a response or comment',
   },
   submitting: {
     id: 'discussions.editor.submitting',
-    defaultMessage: 'Đang gửi',
+    defaultMessage: 'Submitting',
   },
   cancel: {
     id: 'discussions.editor.cancel',
-    defaultMessage: 'Hủy',
+    defaultMessage: 'Cancel',
     description: 'Button to cancel posting a response or comment',
   },
   commentError: {
     id: 'discussions.editor.error.empty',
-    defaultMessage: 'Nội dung bài viết không được để trống.',
+    defaultMessage: 'Post content cannot be empty.',
     description: 'Error message displayed when post content is left empty',
   },
   deleteResponseTitle: {
     id: 'discussions.editor.delete.response.title',
-    defaultMessage: 'Xóa phản hồi',
+    defaultMessage: 'Delete response',
     description: 'Title of confirmation dialog shown when deleting a response',
   },
   deleteResponseDescription: {
     id: 'discussions.editor.delete.response.description',
-    defaultMessage: 'Bạn có chắc muốn xóa vĩnh viễn phản hồi này?',
+    defaultMessage: 'Are you sure you want to permanently delete this response?',
     description: 'Text displayed in confirmation dialog when deleting a response',
   },
   deleteCommentTitle: {
     id: 'discussions.editor.delete.comment.title',
-    defaultMessage: 'Xóa bình luận',
+    defaultMessage: 'Delete comment',
     description: 'Title of confirmation dialog shown when deleting a comment',
   },
   deleteCommentDescription: {
     id: 'discussions.editor.delete.comment.description',
-    defaultMessage: 'Bạn có chắc muốn xóa vĩnh viễn bình luận này?',
+    defaultMessage: 'Are you sure you want to permanently delete this comment?',
     description: 'Text displayed in confirmation dialog when deleting a comment',
   },
   deleteConfirmationDelete: {
     id: 'discussions.delete.confirmation.button.delete',
-    defaultMessage: 'Xóa',
+    defaultMessage: 'Delete',
     description: 'Delete button shown on delete confirmation dialog',
   },
   reportResponseTitle: {
     id: 'discussions.editor.response.response.title',
-    defaultMessage: 'Báo cáo nội dung không phù hợp?',
+    defaultMessage: 'Report inappropriate content?',
     description: 'Title of confirmation dialog shown when reporting a response',
   },
   reportResponseDescription: {
     id: 'discussions.editor.response.description',
-    defaultMessage: 'Nhóm kiểm duyệt sẽ xem xét nội dung này và thực hiện hành động phù hợp.',
-    description: 'Text displayed in confirmation dialog when reporting a response',
+    defaultMessage: 'The discussion moderation team will review this content and take appropriate action.',
+    description: 'Text displayed in confirmation dialog when deleting a response',
   },
   reportCommentTitle: {
     id: 'discussions.editor.report.comment.title',
-    defaultMessage: 'Báo cáo nội dung không phù hợp?',
+    defaultMessage: 'Report inappropriate content?',
     description: 'Title of confirmation dialog shown when reporting a comment',
   },
   reportCommentDescription: {
     id: 'discussions.editor.report.comment.description',
-    defaultMessage: 'Nhóm kiểm duyệt sẽ xem xét nội dung này và thực hiện hành động phù hợp.',
-    description: 'Text displayed in confirmation dialog when reporting a comment',
+    defaultMessage: 'The discussion moderation team will review this content and take appropriate action.',
+    description: 'Text displayed in confirmation dialog when deleting a response',
   },
   editReasonCode: {
     id: 'discussions.editor.comments.editReasonCode',
-    defaultMessage: 'Lý do chỉnh sửa',
-    description: 'Label for field visible to moderators when editing another user\'s response',
+    defaultMessage: 'Reason for editing',
+    description: 'Label for field visible to moderators that allows them to select a reason for editing another user\'s response',
   },
   editReasonCodeError: {
     id: 'discussions.editor.posts.editReasonCode.error',
-    defaultMessage: 'Chọn lý do chỉnh sửa',
-    description: 'Error when moderators submit without selecting a reason',
+    defaultMessage: 'Select reason for editing',
+    description: 'Error message visible to moderators when they submit the post/response/comment without select reason for editing',
   },
   editedBy: {
     id: 'discussions.comment.comments.editedBy',
-    defaultMessage: 'Được chỉnh sửa bởi',
-    description: 'Text shown to indicate who edited a post',
+    defaultMessage: 'Edited by',
+    description: 'Text shown to users to indicate who edited a post. Followed by the username of editor.',
   },
   fullStop: {
     id: 'discussions.comment.comments.fullStop',
     defaultMessage: '•',
-    description: 'Fullstop shown between editor and reason',
+    description: 'Fullstop shown to users to indicate who edited a post. Followed by a reason.',
   },
   reason: {
     id: 'discussions.comment.comments.reason',
-    defaultMessage: 'Lý do',
-    description: 'Text shown before the reason for editing',
+    defaultMessage: 'Reason',
+    description: 'Text shown to users to indicate why a post was edited, followed by a reason.',
   },
   closedBy: {
     id: 'discussions.post.closedBy',
-    defaultMessage: 'Bài viết đã đóng bởi',
+    defaultMessage: 'Post closed by',
   },
   time: {
     id: 'discussion.comment.time',
-    defaultMessage: 'Cách đây {time}',
+    defaultMessage: '{time} ago',
     description: 'Time text for endorse banner',
   },
   noThreadFound: {
     id: 'discussion.thread.notFound',
-    defaultMessage: 'Không tìm thấy chuỗi thảo luận',
-    description: 'Message shown if the requested thread is not found',
+    defaultMessage: 'Thread not found',
+    description: 'message to show on screen if the request thread is not found in course',
   },
   commentSort: {
     id: 'discussions.comment.sortFilterStatus',
     defaultMessage: `{sort, select,
-      false {Cũ nhất trước}
-      true {Mới nhất trước}
+      false {Oldest first}
+      true {Newest first}
       other {{sort}}
     }`,
-    description: 'Sort message showing current sorting',
+    description: 'sort message showing current sorting',
   },
 });
 
